@@ -53,6 +53,7 @@ namespace PMS.WebAPI.Controllers
             // Implement logic to add a new product
             // For example:
             var newProduct = await _productService.AddProduct(addProductRequestDto);
+            // adding
             return CreatedAtAction(nameof(GetProductById), new { id = newProduct.Id }, newProduct);
         }
 
